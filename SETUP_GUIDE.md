@@ -158,24 +158,22 @@ Enter your credentials:
 
 **Setup Steps:**
 
-1. **Go to AWS Console**
-   - Navigate to Amazon Bedrock service
-   - Or visit: https://console.aws.amazon.com/bedrock/
+✅ **No setup required!** Bedrock models are now automatically enabled when first invoked.
 
-2. **Request Model Access**
-   - Click "Model access" in left sidebar
-   - Click "Manage model access" button
-   - Select the following models:
-     - ✅ **Anthropic - Claude 3 Sonnet**
-     - ✅ **Anthropic - Claude 3 Haiku**
-     - ✅ **Amazon - Titan Embeddings G1 - Text**
-   - Click "Request model access"
-   - Wait for approval (usually instant, sometimes takes a few minutes)
+**What happens:**
+- Models activate automatically on first use
+- For Anthropic Claude models, you may need to submit use case details on first invocation
+- The application will handle this automatically
 
-3. **Verify Access**
-   ```bash
-   aws bedrock list-foundation-models --region us-east-1
-   ```
+**Verify Bedrock is available** (optional):
+```bash
+aws bedrock list-foundation-models --region us-east-1
+```
+
+**Models used by this app:**
+- **Claude 3 Sonnet** - Risk scoring and explanations
+- **Claude 3 Haiku** - Fast ingredient analysis
+- **Titan Embeddings** - Vector embeddings for RAG
 
 **Cost**: Pay-per-use
 - Claude 3 Sonnet: ~$3 per 1M input tokens
@@ -471,10 +469,15 @@ aws configure
 **Error**: `AccessDeniedException: Could not access model`
 
 **Solution**:
-1. Go to AWS Console → Bedrock
-2. Click "Model access"
-3. Verify Claude 3 and Titan models show "Access granted"
-4. If not, request access and wait for approval
+1. **For Anthropic Claude models**: On first use, you may need to submit use case details
+   - Go to AWS Console → Bedrock
+   - Try invoking the model - you'll be prompted for use case info
+   - Fill in the form (takes 1-2 minutes)
+   - Models will be enabled immediately after submission
+
+2. **Verify IAM permissions**: Ensure your IAM user/role has `bedrock:InvokeModel` permission
+
+3. **Check region**: Bedrock must be used in supported regions (us-east-1, us-west-2, etc.)
 
 ---
 
