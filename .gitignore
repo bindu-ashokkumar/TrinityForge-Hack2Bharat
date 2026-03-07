@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit secrets (keep config.toml tracked)
+.streamlit/secrets.toml
+
+# AWS
+.aws/
+*.pem
+*accessKeys.csv
+*credentials.csv
+*rootkey.csv
+
+# Environment variables
+.env
+.env.local
+.env.production
+config/local.yaml
+config/production.yaml
+
+# Testing
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Product images (if proprietary)
+product_images/
+
+# Sensitive data
+secrets/
+*.key
+*.secret

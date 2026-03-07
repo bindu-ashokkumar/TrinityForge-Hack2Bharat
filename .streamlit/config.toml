@@ -1,0 +1,12 @@
+[server]
+enableStaticServing = true
+enableCORS = false
+enableXsrfProtection = false
+enableWebsocketCompression = false
+
+[theme]
+primaryColor = "#059669"
+backgroundColor = "#f8faf9"
+secondaryBackgroundColor = "#f0fdf4"
+textColor = "#1f2937"
+font = "sans serif"

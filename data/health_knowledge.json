@@ -1,0 +1,151 @@
+{
+  "guidelines": [
+    {
+      "id": "ada_sugar_001",
+      "condition": "Diabetes",
+      "source": "American Diabetes Association (ADA)",
+      "guideline": "Limit added sugars to less than 10% of total daily calories. For a 2000-calorie diet, this means less than 50g of added sugar per day.",
+      "threshold": {"nutrient": "sugar_g", "max_per_serving": 5, "severity": "high"},
+      "tags": ["sugar", "blood glucose", "insulin resistance"]
+    },
+    {
+      "id": "ada_sugar_002",
+      "condition": "Diabetes",
+      "source": "ADA Standards of Medical Care 2024",
+      "guideline": "Foods with a glycemic index above 70 should be avoided. Processed sugars and refined carbohydrates cause rapid blood glucose spikes.",
+      "threshold": {"nutrient": "sugar_g", "max_per_serving": 8, "severity": "moderate"},
+      "tags": ["glycemic index", "processed sugar", "refined carbs"]
+    },
+    {
+      "id": "aha_sodium_001",
+      "condition": "Hypertension",
+      "source": "American Heart Association (AHA)",
+      "guideline": "Limit sodium intake to no more than 2,300mg per day, ideally 1,500mg for most adults with high blood pressure.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 300, "severity": "high"},
+      "tags": ["sodium", "blood pressure", "cardiovascular"]
+    },
+    {
+      "id": "aha_sodium_002",
+      "condition": "Hypertension",
+      "source": "AHA Dietary Guidelines",
+      "guideline": "Processed and packaged foods are the primary source of excess sodium. Choose fresh or frozen vegetables without added salt.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 200, "severity": "moderate"},
+      "tags": ["processed foods", "packaged foods", "fresh vegetables"]
+    },
+    {
+      "id": "aha_heart_001",
+      "condition": "Heart Disease",
+      "source": "AHA Heart-Healthy Diet Guidelines",
+      "guideline": "Reduce saturated fat to less than 6% of total calories. Limit sodium to 1,500mg/day. Minimize added sugars.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 250, "severity": "high"},
+      "tags": ["saturated fat", "sodium", "added sugars", "cardiovascular"]
+    },
+    {
+      "id": "nkf_kidney_001",
+      "condition": "Kidney Disease",
+      "source": "National Kidney Foundation (NKF)",
+      "guideline": "Limit sodium to less than 2,000mg per day. High sodium causes fluid retention and increases blood pressure, worsening kidney function.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 200, "severity": "high"},
+      "tags": ["sodium", "fluid retention", "kidney function", "potassium"]
+    },
+    {
+      "id": "who_obesity_001",
+      "condition": "Obesity",
+      "source": "World Health Organization (WHO)",
+      "guideline": "Limit free sugars to less than 10% of total energy intake. A further reduction to below 5% provides additional health benefits.",
+      "threshold": {"nutrient": "sugar_g", "max_per_serving": 6, "severity": "high"},
+      "tags": ["sugar", "calories", "weight management", "BMI"]
+    },
+    {
+      "id": "aha_cholesterol_001",
+      "condition": "High Cholesterol",
+      "source": "AHA Cholesterol Management Guidelines",
+      "guideline": "Limit dietary cholesterol and saturated fats. High sodium can compound cardiovascular risks associated with high cholesterol.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 300, "severity": "moderate"},
+      "tags": ["cholesterol", "saturated fat", "cardiovascular risk"]
+    },
+    {
+      "id": "ata_thyroid_001",
+      "condition": "Thyroid",
+      "source": "American Thyroid Association (ATA)",
+      "guideline": "Avoid heavily processed foods with preservatives like BHA, BHT, and sodium benzoate which may interfere with thyroid hormone production.",
+      "threshold": {"nutrient": "preservatives", "max_per_serving": 0, "severity": "moderate"},
+      "tags": ["preservatives", "thyroid hormones", "processed foods"]
+    },
+    {
+      "id": "celiac_gluten_001",
+      "condition": "Celiac Disease",
+      "source": "Celiac Disease Foundation",
+      "guideline": "Strictly avoid all gluten-containing grains: wheat, barley, rye, and their derivatives. Even trace amounts can cause intestinal damage.",
+      "threshold": {"nutrient": "allergen_gluten", "max_per_serving": 0, "severity": "critical"},
+      "tags": ["gluten", "wheat", "barley", "rye", "intestinal damage"]
+    },
+    {
+      "id": "nih_lactose_001",
+      "condition": "Lactose Intolerance",
+      "source": "NIH - National Institute of Diabetes",
+      "guideline": "Avoid or limit dairy products containing lactose. Symptoms include bloating, diarrhea, and gas within 30 minutes to 2 hours of consumption.",
+      "threshold": {"nutrient": "allergen_lactose", "max_per_serving": 0, "severity": "high"},
+      "tags": ["lactose", "dairy", "milk", "digestive distress"]
+    },
+    {
+      "id": "acr_gout_001",
+      "condition": "Gout",
+      "source": "American College of Rheumatology",
+      "guideline": "Limit high-purine foods and beverages with added sugars. Fructose increases uric acid production and triggers gout flares.",
+      "threshold": {"nutrient": "sugar_g", "max_per_serving": 10, "severity": "moderate"},
+      "tags": ["purines", "uric acid", "fructose", "gout flare"]
+    },
+    {
+      "id": "aga_ibs_001",
+      "condition": "IBS",
+      "source": "American Gastroenterological Association",
+      "guideline": "Follow a low-FODMAP diet. Avoid artificial sweeteners, excess sodium, and preservatives that irritate the gut lining.",
+      "threshold": {"nutrient": "preservatives", "max_per_serving": 0, "severity": "moderate"},
+      "tags": ["FODMAP", "gut health", "preservatives", "artificial sweeteners"]
+    },
+    {
+      "id": "nof_osteoporosis_001",
+      "condition": "Osteoporosis",
+      "source": "National Osteoporosis Foundation",
+      "guideline": "High sodium intake increases calcium excretion through kidneys, weakening bones. Limit sodium to under 2,300mg/day.",
+      "threshold": {"nutrient": "sodium_mg", "max_per_serving": 300, "severity": "moderate"},
+      "tags": ["calcium", "bone density", "sodium", "vitamin D"]
+    },
+    {
+      "id": "who_anemia_001",
+      "condition": "Anemia",
+      "source": "WHO Iron Deficiency Guidelines",
+      "guideline": "Increase iron-rich foods. Avoid excess calcium and tannins during iron-rich meals as they inhibit absorption.",
+      "threshold": {"nutrient": "iron_inhibitors", "max_per_serving": 0, "severity": "moderate"},
+      "tags": ["iron", "hemoglobin", "iron absorption", "calcium interference"]
+    },
+    {
+      "id": "nimh_depression_001",
+      "condition": "Depression",
+      "source": "NIMH - Nutritional Psychiatry Research",
+      "guideline": "High sugar and ultra-processed foods are linked to increased depression risk. Mediterranean-style diets show protective effects.",
+      "threshold": {"nutrient": "sugar_g", "max_per_serving": 10, "severity": "moderate"},
+      "tags": ["sugar", "ultra-processed", "mental health", "Mediterranean diet"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2024-12-01",
+    "total_guidelines": 16,
+    "conditions_covered": 16,
+    "sources": [
+      "American Diabetes Association (ADA)",
+      "American Heart Association (AHA)",
+      "National Kidney Foundation (NKF)",
+      "World Health Organization (WHO)",
+      "American Thyroid Association (ATA)",
+      "Celiac Disease Foundation",
+      "NIH - National Institute of Diabetes",
+      "American College of Rheumatology",
+      "American Gastroenterological Association",
+      "National Osteoporosis Foundation",
+      "NIMH - Nutritional Psychiatry Research"
+    ]
+  }
+}

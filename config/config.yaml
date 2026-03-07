@@ -1,0 +1,29 @@
+aws:
+  region: us-east-1
+  s3:
+    bucket_name: swasthcart-products
+    products_key: products.json
+  dynamodb:
+    table_name: swasthcart_sessions
+  bedrock:
+    model_id: amazon.nova-lite-v1:0
+    vision_model_id: amazon.nova-lite-v1:0
+    text_model_id: amazon.nova-lite-v1:0
+    embedding_model_id: amazon.titan-embed-text-v1
+    timeout: 30
+    vision_region: us-east-1
+    text_region: us-east-1
+  cloudwatch:
+    log_group: /aws/swasthcart
+
+app:
+  session_ttl_hours: 2
+  max_products_display: 100
+  cart_improvement_threshold: 60
+
+rag:
+  vector_dimension: 1536
+  embedding_cache_size: 1000
+  similarity_threshold: 0.6
+  top_k_results: 5
+  knowledge_base_path: data/health_knowledge.json
